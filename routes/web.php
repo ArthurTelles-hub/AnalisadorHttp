@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HeaderController;
 
-Route::get('/', [HeaderCrontorller::class, 'index']);
+Route::get('/', [HeaderController::class, 'index']);
 
-Route::get('/analisar', [HeaderCrontorller::class, 'analisar']);
+Route::get('/analisar', [HeaderController::class, 'analisar']);
